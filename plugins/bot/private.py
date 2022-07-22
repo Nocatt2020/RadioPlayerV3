@@ -29,7 +29,7 @@ CHAT_ID=Config.CHAT_ID
 playlist=Config.playlist
 LOG_GROUP=Config.LOG_GROUP
 
-HOME_TEXT = "👋🏻 **Hi [{}](tg://user?id={})**,\n\nI'm **Radio Player V3.0** \nI Can Play Radio / Music / YouTube Live In Channel & Group 24x7 Nonstop. Made with ❤️ By @AsmSafone 😉!"
+HOME_TEXT = "👋🏻 **Hi [{}](tg://user?id={})**,\n\nI'm **Radio Player V3.0** \nI Can Play Radio / Music / YouTube Live In Channel & Group 24x7 Nonstop. Made with ❤️ By @Alay57Chat 😉!"
 HELP_TEXT = """
 💡 --**Setting Up**--:
 
@@ -40,30 +40,30 @@ HELP_TEXT = """
 💡 --**Common Commands**--:
 
 \u2022 `/help` - shows help for all commands
-\u2022 `/song` [song name] - download the song as audio
+\u2022 `/song` [song name] - istədiyin mahnını sürətli tap
 \u2022 `/current` - shows current track with controls
-\u2022 `/playlist` - shows the current & queued playlist
+\u2022 `/playlist` - Playlist kanalı
 
 💡 --**Admins Commands**--:
 
-\u2022 `/radio` - start radio stream
-\u2022 `/stopradio` - stop radio stream
-\u2022 `/skip` - skip current music
-\u2022 `/join` - join the voice chat
-\u2022 `/leave` - leave the voice chat
-\u2022 `/stop` - stop playing music
-\u2022 `/volume` - change volume (0-200)
+\u2022 `/radio` - canlı radio başladın
+\u2022 `/stopradio` - canlı radionu dayandırın
+\u2022 `/skip` - mahnını keçin
+\u2022 `/join` - səsli söhbətə qoşulun
+\u2022 `/leave` - səsli söhbətdən ayrılın
+\u2022 `/stop` - mahnını dayandırın
+\u2022 `/volume` - Səs dəyişikliyi (0-200)
 \u2022 `/replay` - play from the beginning
 \u2022 `/clean` - remove unused raw files
-\u2022 `/pause` - pause playing music
-\u2022 `/resume` - resume playing music
+\u2022 `/pause` - mahnını dondurmaq
+\u2022 `/resume` - musiqi oxumağa davam edun
 \u2022 `/mute` - mute the vc userbot
 \u2022 `/unmute` - unmute the vc userbot
-\u2022 `/restart` - update & restart the bot
+\u2022 `/restart` - botu yenidən başladın
 \u2022 `/setvar` - set/change heroku configs
 
 © **Powered By** : 
-**@AsmSafone | @AsmSupport** 👑
+**@Alay57Chat | @Alay57Chat** 👑
 """
 
 
@@ -197,8 +197,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("SEARCH SONGS INLINE", switch_inline_query_current_chat=""),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/AsmSupport"),
+                InlineKeyboardButton("ƏLAQƏ", url="https://t.me/Rexxuxxxnx"),
+                InlineKeyboardButton("SUPPORT", url="https://t.me/Alay57Chat"),
             ],
             [
                 InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
@@ -224,8 +224,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("SEARCH SONGS INLINE", switch_inline_query_current_chat=""),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/AsmSupport"),
+                InlineKeyboardButton("CHANNEL", url="https://t.me/Alay57Chat"),
+                InlineKeyboardButton("SUPPORT", url="https://t.me/Alay57Chat"),
             ],
             [
                 InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
@@ -262,8 +262,8 @@ async def start(client, message):
                 InlineKeyboardButton("SEARCH SONGS INLINE", switch_inline_query_current_chat=""),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/AsmSupport"),
+                InlineKeyboardButton("CHANNEL", url="https://t.me/Alay57Chat"),
+                InlineKeyboardButton("SUPPORT", url="https://t.me/Alay57Chat"),
             ],
             [
                 InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
@@ -274,7 +274,7 @@ async def start(client, message):
             ]
             ]
     reply_markup = InlineKeyboardMarkup(buttons)
-    m=await message.reply_photo(photo="https://telegra.ph/file/4e839766d45935998e9c6.jpg", caption=HOME_TEXT.format(message.from_user.first_name, message.from_user.id), reply_markup=reply_markup)
+    m=await message.reply_photo(photo="https://telegra.ph/file/8ec1cac7ce24c34678ea2.jpg", caption=HOME_TEXT.format(message.from_user.first_name, message.from_user.id), reply_markup=reply_markup)
     await mp.delete(m)
     await mp.delete(message)
 
@@ -286,8 +286,8 @@ async def help(client, message):
                 InlineKeyboardButton("SEARCH SONGS INLINE", switch_inline_query_current_chat=""),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/AsmSupport"),
+                InlineKeyboardButton("CHANNEL", url="https://t.me/Alay57Chat"),
+                InlineKeyboardButton("SUPPORT", url="https://t.me/Alay57Chat"),
             ],
             [
                 InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
@@ -301,7 +301,7 @@ async def help(client, message):
     reply_markup = InlineKeyboardMarkup(buttons)
     if msg.get('help') is not None:
         await msg['help'].delete()
-    msg['help'] = await message.reply_photo(photo="https://telegra.ph/file/4e839766d45935998e9c6.jpg", caption=HELP_TEXT, reply_markup=reply_markup)
+    msg['help'] = await message.reply_photo(photo="https://telegra.ph/file/8ec1cac7ce24c34678ea2.jpg", caption=HELP_TEXT, reply_markup=reply_markup)
     await mp.delete(message)
 
 
